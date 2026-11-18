@@ -42,3 +42,15 @@ body:has(.landing-shell){background:#eaf3ff}
 @media(max-width:780px){.landing-shell{padding:12px}.landing-nav{border-radius:18px;height:66px;padding:0 14px}.landing-brand{font-size:14px}.landing-brand-icon{height:35px;width:35px}.landing-brand-icon svg{width:22px}.landing-links{display:none}.landing-nav-cta{padding:9px 11px;font-size:11px}.landing-hero{grid-template-columns:1fr;gap:12px;padding:30px 10px 12px}.welcome-content{text-align:center}.welcome-content h1{font-size:38px;letter-spacing:-1.5px}.landing-description{margin:0 auto}.landing-chip{margin-bottom:15px}.landing-line{margin:20px auto}.welcome-content h2{font-size:29px}.landing-subline{margin-bottom:0}.hero-art{grid-row:auto;grid-column:1;height:295px;background-position:center bottom;background-size:contain;max-width:440px;width:100%;margin:auto;align-self:center}.landing-auth{grid-row:auto;grid-column:1;width:100%}.glass-login{max-width:470px;padding:27px 21px}.feature-strip{padding:24px 10px 10px}.landing-bottom{padding:18px 13px}.feature-glass{padding:16px}}
 @media(max-width:440px){.landing-brand span:last-child{max-width:198px;overflow:hidden;text-overflow:ellipsis}.landing-nav-cta svg{display:none}.landing-nav-cta{font-size:10px}.feature-strip{gap:10px}.feature-glass{padding:14px 12px}.feature-glass h3{font-size:12px}.feature-glass p{font-size:11px}.landing-bottom{display:block;text-align:center}.landing-bottom a{display:block;margin-top:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important}}
+
+/* Student signup — consistent frosted-glass form */
+.signup-form{display:grid;gap:7px;max-height:min(58vh,580px);overflow-y:auto;padding:2px 6px 8px 2px;scrollbar-width:thin}
+.signup-form .formfield{margin-bottom:3px}
+.signup-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.signup-form select{width:100%;min-height:43px;border:1px solid rgba(68,120,187,.18);border-radius:13px;background:rgba(255,255,255,.76);padding:9px 12px;color:#17345a}
+.auth-switch{width:100%;border:0;background:transparent;color:#365d86;cursor:pointer;font-size:13px;padding:12px 4px;transition:color .18s ease,transform .18s ease}
+.auth-switch strong{color:#1768d4;text-decoration:underline;text-underline-offset:3px}
+.auth-switch:hover{color:#0e4a9e;transform:translateY(-1px)}
+.auth-switch:focus-visible{outline:2px solid #246fda;outline-offset:2px;border-radius:8px}
+@media(max-width:420px){.signup-grid{grid-template-columns:1fr}.signup-form{max-height:53vh}}
+@media(prefers-reduced-motion:reduce){.auth-switch{transition:none}.auth-switch:hover{transform:none}}
